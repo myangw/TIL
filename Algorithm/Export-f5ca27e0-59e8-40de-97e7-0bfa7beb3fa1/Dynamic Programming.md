@@ -59,5 +59,28 @@ freecodecamp유툽영상 듣는중:  [https://youtu.be/oBt53YbR9Kk](https://yout
 ### Tabulation
 
 - 가장 작은 subproblem부터 시작해서 그것을 더 큰걸 계산할 때 사용한다.
+
 - Tabulation은 사전적 정의로 '표' 라는 뜻인데, 표에 하나 하나 값을 채워넣고 그걸로 함수를 적용하듯이 그런 기법이라서?? 명명된듯
--
+
+- 반복문으로 제일 작은 부분부터 계산해가는 방식.
+
+- 피보나치를 tabulation으로도 풀수 있다.
+
+  ```javascript
+  const fib = n => {
+      if (n === 0) {
+          return 0;
+      }
+      let x = 0;
+      let y = 1;
+      for (let i = 2; i < n; i++) {
+          let tmp = x + y;
+          x = y;
+          y = tmp;
+      }
+      return x + y;
+  }
+  ```
+
+  => 시간복잡도는 O(n), 공간복잡도는 O(1) (재귀호출을 하지 않는다는 장점이 있음.)
+
