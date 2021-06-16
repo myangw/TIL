@@ -4,7 +4,7 @@
 
 ## 전체 구조
 
-<img src="\REALMYSQL_3장 아키텍처 cd0d93e8267a4847a6a54fa612292782\Untitled.png" style="zoom:80%;" />
+<img src=".\REALMYSQL_3장 아키텍처 cd0d93e8267a4847a6a54fa612292782\Untitled.png" style="zoom:80%;" />
 
 - MYSQL엔진: 커넥션 핸들러, SQL파서, 전처리기, 옵티마이저 등
 - 스토리지 엔진: SQL문장을 분석하거나 최적화. 실제 데이터를 디스크 스토리지에 저장하거나 읽어옴.
@@ -98,7 +98,7 @@ mysql서버는 스레드 기반으로 작동한다.
     - 데드락 발생과 동시에 감지되어 감지된 데드락은 트랜잭션 중 rollback이 가장 용이한 것을 자동으로 강제종료함.
 - 자동화된 장애 복구
 
-![](\REALMYSQL_3장 아키텍처 cd0d93e8267a4847a6a54fa612292782\Untitled 1.png)
+<img src=".\REALMYSQL_3장 아키텍처 cd0d93e8267a4847a6a54fa612292782\Untitled 1.png" style="zoom:80%;" />
 
 책이랑 그림이 조금 다르다... 
 
